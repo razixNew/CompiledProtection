@@ -5,7 +5,6 @@
 
 
 #include "dbghelp.h"
-//code from: https://github.com/Speedi13/Custom-GetProcAddress-and-GetModuleHandle-and-more
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //			Equivalent to the windows api function ImageNtHeader
@@ -295,8 +294,6 @@ FARPROC WINAPI GetProcAddressToLower( _In_ const HMODULE hModule, _In_ LPCSTR lp
 	if ( !ExportDirectory->NumberOfFunctions )
 		return nullptr;
 
-	//from BlackBone
-	//https://github.com/DarthTon/Blackbone/blob/3dc33d815011b83855af607013d34c836b9d0877/src/BlackBone/Process/ProcessModules.cpp#L266
 	// Fix invalid directory size
 	if (ExportDirectorySize <= sizeof( IMAGE_EXPORT_DIRECTORY ))
 	{

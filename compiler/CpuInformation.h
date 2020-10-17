@@ -1,5 +1,3 @@
-//https://github.com/Speedi13/CPUID
-
 #pragma once
 //https://docs.microsoft.com/en-us/cpp/intrinsics/cpuid-cpuidex
 #include <intrin.h>

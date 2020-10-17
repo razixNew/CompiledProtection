@@ -7,7 +7,6 @@
 #include "ASSERT.h"
 
 
-//https://github.com/Speedi13/CPUID
 #include "CpuInformation.h"
 
 int __cdecl main( /*IN*/ const int argc, /*IN*/ const CHAR* argv[])
@@ -20,7 +19,6 @@ int __cdecl main( /*IN*/ const int argc, /*IN*/ const CHAR* argv[])
 	EnableAllPrivileges();
 
 	//Retrieve cpu-information using the CPUID instruction
-	//https://github.com/Speedi13/CPUID
 	//=> https://en.wikipedia.org/wiki/CPUID
 	const struct CpuInfo CpuInformation = CpuInfo();
 

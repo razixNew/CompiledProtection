@@ -767,7 +767,6 @@ wchar_t* OpenFileDialog( LPCWSTR DialogTitle )
 }
 
 //-------------------------------------------------------------------------------
-//https://github.com/learn-more/findpattern-bench/blob/master/patterns/kokole.h
 bool DataCompare( /*IN*/ const BYTE* pData, /*IN*/ const BYTE* bSig, /*IN*/ const char* szMask)
 {
 	__ASSERT__( pData != NULL );
@@ -992,8 +991,6 @@ void* ManualMapDynamicLinkLibrary( /*IN*/ void* DiskImage, /*IN OPTIONAL*/ DWORD
 						const DWORD_PTR VirtualAddress = RelocationBaseAddress + (DWORD_PTR)RelocationOffset;
 						
 						//https://doxygen.reactos.org/df/da2/sdk_2lib_2rtl_2image_8c.html#a79a460be03d9da50f71d427b26238496
-
-						//https://github.com/DarthTon/Blackbone/blob/43bc59f68dc1e86347a76192ef3eadc0bf21af67/src/BlackBoneDrv/ldrreloc.c#L229
 
 						if ( RelocationType == IMAGE_REL_BASED_ABSOLUTE )
 						{

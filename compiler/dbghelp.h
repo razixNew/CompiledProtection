@@ -1,6 +1,4 @@
 #pragma once
-//code from: https://github.com/Speedi13/Custom-GetProcAddress-and-GetModuleHandle-and-more
-
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /// <summary>
 /// Locates the IMAGE_NT_HEADERS structure in a PE image and returns a pointer to the data
